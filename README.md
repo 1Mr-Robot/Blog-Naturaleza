@@ -90,15 +90,9 @@ Universidad Autónoma de Nuevo León
 Facultad de Ingeniería Mecánica y Eléctrica
 Equipo 3 - Ambiente y Sustentabilidad
 
-## Contenido
-
-El contenido del sitio está basado en archivos de texto:
-- `informacion.txt` - Contenido principal sobre ecosistemas
-- `entrada1.txt` - entrada5.txt - Contenido específico de cada entrada del blog
-
 ## Imágenes
 
-El proyecto utiliza 56 imágenes ubicada en la carpeta `images/`, incluyendo:
+El proyecto utiliza 11 imágenes ubicada en la carpeta `images/`, incluyendo:
 - ecosistema-minimalista.jpg
 - flujo-de-energia.jpg
 - niveles-troficos.jpg
