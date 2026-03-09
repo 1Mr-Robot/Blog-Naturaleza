@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rol de los Seres Vivos - Principios Básicos de la Naturaleza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-green-900/95 transition-all duration-300 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <i class="bi bi-tree-fill text-2xl font-bold text-white"></i>
+                        <span class="ml-2 text-xl font-bold text-white">Naturaleza</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                        <a href="blog.html" class="nav-link active">Blog</a>
+                        <a href="foro.html" class="nav-link">Foro</a>
+                        <a href="equipo.html" class="nav-link">Equipo</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-green-900/95">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 text-white">Inicio</a>
+                <a href="blog.html" class="block px-3 py-2 text-white">Blog</a>
+                <a href="foro.html" class="block px-3 py-2 text-white">Foro</a>
+                <a href="equipo.html" class="block px-3 py-2 text-white">Equipo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 gradient-green">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <a href="blog.html" class="inline-flex items-center text-green-200 hover:text-white mb-4 transition-colors">
+                <i class="bi bi-arrow-left mr-2"></i>
+                Volver al Blog
+            </a>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 animate-fadeIn">
+                El Rol de los Seres Vivos en los Ecosistemas
+            </h1>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="section-padding pt-8">
+        <div class="max-w-4xl mx-auto px-4">
+            <article class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <img src="../images/seres-vivos-minimalista.webp" alt="El Rol de los Seres Vivos" class="w-full h-64 object-cover">
+                
+                <div class="p-8 md:p-12">
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Los ecosistemas están formados por una gran diversidad de organismos que interactúan entre sí y con su entorno. Cada ser vivo cumple una función específica dentro de este sistema natural, lo que permite mantener el equilibrio ecológico y el funcionamiento adecuado de la biosfera.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-flower1 text-green-600 mr-3"></i>
+                        Productores: la base de la vida en los ecosistemas
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Los productores, también llamados <strong>organismos autótrofos</strong>, son aquellos capaces de producir su propio alimento a partir de sustancias inorgánicas. Para ello utilizan procesos como la fotosíntesis o la quimiosíntesis.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Su función principal es transformar la energía del ambiente en energía química que puede ser utilizada por otros organismos. Entre los principales productores se encuentran plantas, algas y cianobacterias.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-green-50 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-green-700 mb-4 flex items-center">
+                                <i class="bi bi-sun mr-2"></i>
+                                Productores Fotosintéticos
+                            </h3>
+                            <p class="text-gray-700">Utilizan la luz solar para llevar a cabo la fotosíntesis. Este grupo incluye plantas, algas y algunas bacterias que contienen clorofila.</p>
+                        </div>
+                        <div class="bg-purple-50 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-purple-700 mb-4 flex items-center">
+                                <i class="bi bi-lightning mr-2"></i>
+                                Productores Quimiosintéticos
+                            </h3>
+                            <p class="text-gray-700">Obtienen energía a partir de reacciones químicas de sustancias inorgánicas. Se encuentran en ambientes extremos como las profundidades oceánicas.</p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-fire text-orange-600 mr-3"></i>
+                        Consumidores: organismos que obtienen energía de otros seres vivos
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Los consumidores, también llamados <strong>heterótrofos</strong>, son organismos que no pueden producir su propio alimento, por lo que deben obtener energía alimentándose de otros seres vivos.
+                    </p>
+
+                    <div class="bg-gray-50 rounded-xl p-6 mb-8">
+                        <h3 class="font-bold text-gray-800 mb-4">Niveles de Consumidores:</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center"><i class="bi bi-1-circle text-green-600 mr-3"></i><span><strong>Primarios (Herbívoros):</strong> Se alimentan directamente de los productores</span></div>
+                            <div class="flex items-center"><i class="bi bi-2-circle text-blue-600 mr-3"></i><span><strong>Secundarios (Carnívoros):</strong> Se alimentan de herbívoros</span></div>
+                            <div class="flex items-center"><i class="bi bi-3-circle text-red-600 mr-3"></i><span><strong>Terciarios (Depredadores):</strong> Ocupan las posiciones más altas</span></div>
+                            <div class="flex items-center"><i class="bi bi-universal-access text-purple-600 mr-3"></i><span><strong>Omnívoros:</strong> Consumen tanto plantas como animales (los humanos)</span></div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-recycle text-brown-600 mr-3"></i>
+                        Descomponedores y detritívoros: recicladores de la naturaleza
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Los <strong>detritívoros</strong> son animales que se alimentan de materia orgánica en descomposición, como lombrices, cochinillas y milpiés. Los <strong>descomponedores</strong>, generalmente bacterias y hongos, descomponen químicamente esta materia transformándola en nutrientes inorgánicos.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-diagram-3 text-indigo-600 mr-3"></i>
+                        Nicho ecológico
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        El <strong>nicho ecológico</strong> se refiere al conjunto de condiciones, funciones y relaciones que definen el papel de una especie dentro de un ecosistema. Este concepto incluye la forma en que una especie obtiene su alimento, su comportamiento, el tipo de hábitat donde vive y sus interacciones con otras especies.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-people text-pink-600 mr-3"></i>
+                        Interacciones ecológicas entre organismos
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-red-50 rounded-xl p-4">
+                            <h4 class="font-bold text-red-700">Competencia</h4>
+                            <p class="text-sm text-gray-600">Cuando dos organismos compiten por recursos limitados</p>
+                        </div>
+                        <div class="bg-orange-50 rounded-xl p-4">
+                            <h4 class="font-bold text-orange-700">Depredación</h4>
+                            <p class="text-sm text-gray-600">Un organismo captura y consume a otro</p>
+                        </div>
+                        <div class="bg-purple-50 rounded-xl p-4">
+                            <h4 class="font-bold text-purple-700">Parasitismo</h4>
+                            <p class="text-sm text-gray-600">Un organismo se beneficia a expensas de otro</p>
+                        </div>
+                        <div class="bg-green-50 rounded-xl p-4">
+                            <h4 class="font-bold text-green-700">Mutualismo</h4>
+                            <p class="text-sm text-gray-600">Ambas especies obtienen beneficios</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-600 text-white rounded-xl p-6 text-center">
+                        <h3 class="text-xl font-bold mb-2">El equilibrio ecológico y nuestro papel</h3>
+                        <p class="text-green-100">La biodiversidad es un elemento clave para la estabilidad y la resiliencia de los ecosistemas.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-between mt-8 gap-4">
+                <a href="entrada2.html" class="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+                    <i class="bi bi-arrow-left mr-2"></i>
+                    Entrada Anterior
+                </a>
+                <a href="entrada4.html" class="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                    Siguiente Entrada
+                    <i class="bi bi-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>© 2026 Equipo 3 - Universidad Autónoma de Nuevo León</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de Energía - Principios Básicos de la Naturaleza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 bg-green-900/95 transition-all duration-300 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <i class="bi bi-tree-fill text-2xl font-bold text-white"></i>
+                        <span class="ml-2 text-xl font-bold text-white">Naturaleza</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                        <a href="blog.html" class="nav-link active">Blog</a>
+                        <a href="foro.html" class="nav-link">Foro</a>
+                        <a href="equipo.html" class="nav-link">Equipo</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-green-900/95">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 text-white">Inicio</a>
+                <a href="blog.html" class="block px-3 py-2 text-white">Blog</a>
+                <a href="foro.html" class="block px-3 py-2 text-white">Foro</a>
+                <a href="equipo.html" class="block px-3 py-2 text-white">Equipo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 gradient-sky">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <a href="blog.html" class="inline-flex items-center text-blue-200 hover:text-white mb-4 transition-colors">
+                <i class="bi bi-arrow-left mr-2"></i>
+                Volver al Blog
+            </a>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 animate-fadeIn">
+                Flujo de Energía y Ciclos Biogeoquímicos
+            </h1>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="section-padding pt-8">
+        <div class="max-w-4xl mx-auto px-4">
+            <article class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <img src="../images/cascada-en-selva.jpg" alt="Flujo de Energía" class="w-full h-64 object-cover">
+
+                <div class="p-8 md:p-12">
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        La energía fluye a través de los ecosistemas, mientras que los nutrientes se reciclan mediante
+                        los ciclos biogeoquímicos. Comprender estos procesos es fundamental para entender cómo funciona
+                        la vida en nuestro planeta.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-lightning-charge text-yellow-500 mr-3"></i>
+                        ¿Qué es el flujo de energía?
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        El flujo de energía es el proceso mediante el cual la energía entra a los ecosistemas, se
+                        transfiere entre los organismos y finalmente se disipa como calor. A diferencia de la materia,
+                        la energía no se recicla; siempre debe ingresar nueva energía al sistema.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-sun text-yellow-500 mr-3"></i>
+                        El Sol como fuente principal de energía
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        La transferencia de energía solar a química transforma la radiación luminosa en energía
+                        potencial almacenada en enlaces químicos, principalmente mediante la fotosíntesis. El Sol es la
+                        fuente primaria de energía para la fotosíntesis, actuando como el motor que permite a las
+                        plantas convertir dióxido de carbono y agua en glucosa y oxígeno.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-diagram-3 text-green-600 mr-3"></i>
+                        Niveles tróficos
+                    </h2>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="bg-green-50 border-l-4 border-green-500 rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <i class="bi bi-flower1 text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-green-800">Productores</h3>
+                                    <p class="text-gray-600 text-sm">Organismos autótrofos que producen su propio
+                                        alimento mediante la fotosíntesis. Son la base del ecosistema.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 border-l-4 border-blue-500 rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <i class="bi bi-egg-fried text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-blue-800">Consumidores Primarios (Herbívoros)</h3>
+                                    <p class="text-gray-600 text-sm">Se alimentan directamente de los productores.
+                                        Obtienen la energía almacenada de las plantas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-orange-50 border-l-4 border-orange-500 rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="white" class="icon icon-tabler icons-tabler-filled icon-tabler-paw">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" />
+                                        <path
+                                            d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" />
+                                        <path
+                                            d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" />
+                                        <path
+                                            d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" />
+                                        <path
+                                            d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-orange-800">Consumidores Secundarios (Carnívoros)</h3>
+                                    <p class="text-gray-600 text-sm">Se alimentan de consumidores primarios. Reciben
+                                        menos energía que los niveles inferiores.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-red-50 border-l-4 border-red-500 rounded-xl p-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-cat">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M20 3v10a8 8 0 1 1 -16 0v-10l3.432 3.432a7.963 7.963 0 0 1 4.568 -1.432c1.769 0 3.403 .574 4.728 1.546l3.272 -3.546" />
+                                        <path d="M2 16h5l-4 4" />
+                                        <path d="M22 16h-5l4 4" />
+                                        <path d="M11 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                        <path d="M9 11v.01" />
+                                        <path d="M15 11v.01" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-red-800">Consumidores Terciarios (Depredadores Topes)</h3>
+                                    <p class="text-gray-600 text-sm">Están en los niveles más altos de la cadena
+                                        alimentaria. Son menos numerosos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-bar-chart text-purple-600 mr-3"></i>
+                        Pirámide de Energía
+                    </h2>
+                    <img src="../images/piramide-de-energia.jpeg" alt="Pirámide de Energía"
+                        class="w-full rounded-xl mb-6">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        La pirámide de energía representa la cantidad de energía disponible en cada nivel trófico. Solo
+                        aproximadamente el <strong class="text-green-600">10%</strong> de la energía es aprovechada por
+                        el siguiente nivel. El resto se pierde principalmente en forma de calor durante los procesos
+                        metabólicos.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="bi bi-arrow-repeat text-blue-500 mr-3"></i>
+                        Ciclos Biogeoquímicos
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Son procesos naturales que reciclan elementos químicos esenciales (como carbono, nitrógeno,
+                        oxígeno, fósforo, azufre y agua) entre los seres vivos y el ambiente abiótico.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="font-bold text-blue-700 mb-3">Ciclos Gaseosos</h3>
+                            <p class="text-gray-600 text-sm">Los nutrientes circulan rápidamente entre la atmósfera y
+                                los seres vivos. Ejemplos: carbono, nitrógeno, oxígeno y agua.</p>
+                        </div>
+                        <div class="bg-amber-50 rounded-xl p-6">
+                            <h3 class="font-bold text-amber-700 mb-3">Ciclos Sedimentarios</h3>
+                            <p class="text-gray-600 text-sm">Los nutrientes se reciclan más lentamente y se encuentran
+                                principalmente en la corteza terrestre. Ejemplos: fósforo y azufre.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl p-6 text-center">
+                        <h3 class="text-xl font-bold mb-2">Importancia de los Flujos Biogeoquímicos</h3>
+                        <p class="text-green-100">Aseguran la disponibilidad de nutrientes necesarios para la vida,
+                            regulan el clima y mantienen el equilibrio en la biosfera.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-between mt-8 gap-4">
+                <a href="entrada1.html"
+                    class="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+                    <i class="bi bi-arrow-left mr-2"></i>
+                    Entrada Anterior
+                </a>
+                <a href="entrada3.html"
+                    class="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                    Siguiente Entrada
+                    <i class="bi bi-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>© 2026 Equipo 3 - Universidad Autónoma de Nuevo León</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

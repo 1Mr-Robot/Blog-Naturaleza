@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro - Principios Básicos de la Naturaleza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-green-900/95 transition-all duration-300 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <i class="bi bi-tree-fill text-2xl font-bold text-white"></i>
+                        <span class="ml-2 text-xl font-bold text-white">Naturaleza</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="foro.html" class="nav-link active">Foro</a>
+                        <a href="equipo.html" class="nav-link">Equipo</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-green-900/95">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 text-white">Inicio</a>
+                <a href="blog.html" class="block px-3 py-2 text-white">Blog</a>
+                <a href="foro.html" class="block px-3 py-2 text-white bg-white/20">Foro</a>
+                <a href="equipo.html" class="block px-3 py-2 text-white">Equipo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 gradient-sky">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-fadeIn">
+                Foro de la Naturaleza
+            </h1>
+            <p class="text-xl text-green-100 max-w-3xl mx-auto animate-fadeIn animation-delay-200">
+                Comparte y descubre lugares asombrosos de la naturaleza. Inspírame y inspírate con las maravillas de nuestro planeta.
+            </p>
+        </div>
+    </section>
+
+    <!-- Create Post Section -->
+    <section class="section-padding bg-white py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 shadow-xl">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4 shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Comparte tu Lugar Favorito</h2>
+                        <p class="text-gray-600">¿Has visitado algún lugar increíble de la naturaleza? ¡Cuéntanos!</p>
+                    </div>
+                </div>
+                
+                <form id="new-post-form" class="space-y-6">
+                    <div class="relative">
+                        <input type="text" id="post-author" name="author" required 
+                            class="peer w-full px-4 pt-6 pb-2 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-500 focus:ring-0 transition-colors placeholder-transparent"
+                            placeholder="Tu Nombre">
+                        <label for="post-author" class="absolute left-4 top-2 text-sm text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-sm peer-focus:text-green-600 cursor-text">
+                            Tu Nombre *
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input type="text" id="post-location" name="location" required 
+                            class="peer w-full px-4 pt-6 pb-2 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-500 focus:ring-0 transition-colors placeholder-transparent"
+                            placeholder="Ubicación del Lugar">
+                        <label for="post-location" class="absolute left-4 top-2 text-sm text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-sm peer-focus:text-green-600 cursor-text">
+                            Ubicación del Lugar *
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <textarea id="post-content" name="content" rows="4" required 
+                            class="peer w-full px-4 pt-6 pb-2 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-green-500 focus:ring-0 transition-colors placeholder-transparent resize-none"
+                            placeholder="Tu Experiencia"></textarea>
+                        <label for="post-content" class="absolute left-4 top-2 text-sm text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-sm peer-focus:text-green-600 cursor-text">
+                            Tu Experiencia *
+                        </label>
+                    </div>
+                    <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-green-500 transition-colors cursor-pointer bg-white">
+                        <input type="file" id="post-image" name="image" accept="image/*" class="hidden">
+                        <label for="post-image" class="cursor-pointer">
+                            <i class="bi bi-cloud-upload text-4xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-600 font-medium">Haz clic para subir una imagen</p>
+                            <p class="text-sm text-gray-400 mt-1">PNG, JPG, GIF hasta 5MB</p>
+                        </label>
+                        <div id="image-preview" class="hidden mt-4">
+                            <img id="preview-img" src="" alt="Preview" class="max-h-48 rounded-lg mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="submit" class="btn-primary flex items-center gap-2">
+                            <i class="bi bi-send"></i>
+                            Publicar
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Success Message -->
+                <div id="success-message" class="hidden mt-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    ¡Tu publicación ha sido creada exitosamente!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posts Section -->
+    <section class="section-padding bg-gray-50 py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Publicaciones Recientes</h2>
+                <div class="flex items-center gap-2 text-gray-600">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                    </svg>
+                    <span id="post-count">0 publicaciones</span>
+                </div>
+            </div>
+            
+            <!-- Posts Container -->
+            <div id="posts-container">
+                <!-- Posts will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="section-padding bg-white py-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Tips para tu Publicación</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 bg-blue-50 rounded-xl card-hover">
+                    <i class="bi bi-camera text-4xl mb-3 text-blue-600"></i>
+                    <h3 class="font-bold text-blue-700 mb-2">Incluye Fotos</h3>
+                    <p class="text-gray-600 text-sm">Las imágenes ayudan a otros a apreciar la belleza del lugar que visitaste.</p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-xl card-hover">
+                    <i class="bi bi-geo-alt text-4xl mb-3 text-green-600"></i>
+                    <h3 class="font-bold text-green-700 mb-2">Comparte la Ubicación</h3>
+                    <p class="text-gray-600 text-sm">Ayuda a otros a planificar su próxima aventura natural.</p>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl card-hover">
+                    <i class="bi bi-chat-quote text-4xl mb-3 text-purple-600"></i>
+                    <h3 class="font-bold text-purple-700 mb-2">Cuenta tu Experiencia</h3>
+                    <p class="text-gray-600 text-sm">Comparte cómo te sientes y qué hace especial ese lugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Principios Básicos de la Naturaleza</h3>
+                    <p class="text-green-200">
+                        Un proyecto educativo sobre los fundamentos que rigen nuestro planeta.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-green-200 hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="blog.html" class="text-green-200 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="foro.html" class="text-green-200 hover:text-white transition-colors">Foro</a></li>
+                        <li><a href="equipo.html" class="text-green-200 hover:text-white transition-colors">Equipo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Universidad</h4>
+                    <p class="text-green-200">
+                        Universidad Autónoma de Nuevo León<br>
+                        Facultad de Ingeniería Mecánica y Eléctrica
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-green-800 mt-8 pt-8 text-center text-green-200">
+                <p>© 2026 Equipo 3 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+    <script>
+        // Image preview functionality
+        document.getElementById('post-image').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview-img').src = e.target.result;
+                    document.getElementById('image-preview').classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Update post count
+        document.addEventListener('DOMContentLoaded', () => {
+            const posts = JSON.parse(localStorage.getItem('nature_forum_posts') || '[]');
+            document.getElementById('post-count').textContent = `${posts.length} publicación${posts.length !== 1 ? 'es' : ''}`;
+        });
+    </script>
+</body>
+</html>

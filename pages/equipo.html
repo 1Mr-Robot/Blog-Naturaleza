@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - Principios Básicos de la Naturaleza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-green-900/95 transition-all duration-300 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <i class="bi bi-tree-fill text-2xl font-bold text-white"></i>
+                        <span class="ml-2 text-xl font-bold text-white">Naturaleza</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="foro.html" class="nav-link">Foro</a>
+                        <a href="equipo.html" class="nav-link active">Equipo</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-green-900/95">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 text-white">Inicio</a>
+                <a href="blog.html" class="block px-3 py-2 text-white">Blog</a>
+                <a href="foro.html" class="block px-3 py-2 text-white">Foro</a>
+                <a href="equipo.html" class="block px-3 py-2 text-white bg-white/20">Equipo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 gradient-earth">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 animate-fadeIn">
+                Nuestro Equipo
+            </h1>
+            <p class="text-xl text-amber-100 max-w-3xl mx-auto animate-fadeIn animation-delay-200">
+                Conoce a los estudiantes que desarrollaron este proyecto educativo sobre los principios básicos de la naturaleza.
+            </p>
+        </div>
+    </section>
+
+    <!-- University Info -->
+    <section class="section-padding bg-white pt-8 pb-1 px-4">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <div class="inline-block p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl card-hover">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <i class="bi bi-mortarboard text-5xl text-green-700"></i>
+                    <h2 class="text-3xl font-bold text-green-800">Universidad Autónoma de Nuevo León</h2>
+                </div>
+                <p class="text-xl text-gray-600">Facultad de Ingeniería Mecánica y Eléctrica</p>
+                <p class="text-lg text-green-600 font-semibold mt-2">Materia: Ambiente y Sustentabilidad</p>
+                <p class="text-2xl text-amber-600 font-bold mt-4">Equipo: 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Members Table -->
+    <section class="section-padding bg-gray-50 py-8 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Integrantes del Equipo</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    <thead class="bg-green-600">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-white font-bold">#</th>
+                            <th class="px-6 py-4 text-left text-white font-bold"><i class="bi bi-person-vcard mr-2"></i>Matrícula</th>
+                            <th class="px-6 py-4 text-left text-white font-bold"><i class="bi bi-person mr-2"></i>Nombre</th>
+                            <th class="px-6 py-4 text-left text-white font-bold"><i class="bi bi-book mr-2"></i>Carrera</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-green-50 transition-colors">
+                            <td class="px-6 py-4 text-gray-600 font-semibold">1</td>
+                            <td class="px-6 py-4 font-mono text-gray-800">2047441</td>
+                            <td class="px-6 py-4 text-gray-800 font-medium">María Luisa Tapia Bolado</td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">ITS</span></td>
+                        </tr>
+                        <tr class="hover:bg-blue-50 transition-colors">
+                            <td class="px-6 py-4 text-gray-600 font-semibold">2</td>
+                            <td class="px-6 py-4 font-mono text-gray-800">2102017</td>
+                            <td class="px-6 py-4 text-gray-800 font-medium">Leilany Scarlett Arciaga Madrigal</td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">IAS</span></td>
+                        </tr>
+                        <tr class="hover:bg-orange-50 transition-colors">
+                            <td class="px-6 py-4 text-gray-600 font-semibold">3</td>
+                            <td class="px-6 py-4 font-mono text-gray-800">2072277</td>
+                            <td class="px-6 py-4 text-gray-800 font-medium">Jorge Alberto García Cantú</td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold">IME</span></td>
+                        </tr>
+                        <tr class="hover:bg-purple-50 transition-colors">
+                            <td class="px-6 py-4 text-gray-600 font-semibold">4</td>
+                            <td class="px-6 py-4 font-mono text-gray-800">2057557</td>
+                            <td class="px-6 py-4 text-gray-800 font-medium">Diego Azpeitia Guerrero</td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">IMT</span></td>
+                        </tr>
+                        <tr class="hover:bg-teal-50 transition-colors">
+                            <td class="px-6 py-4 text-gray-600 font-semibold">5</td>
+                            <td class="px-6 py-4 font-mono text-gray-800">2222852</td>
+                            <td class="px-6 py-4 text-gray-800 font-medium">Francisco Javier Reyes Vázquez</td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-semibold">IMF</span></td>
+                        </tr>
+                        <tr class="hover:bg-indigo-50 transition-colors">
+                            <td class="px-6 py-4 text-gray-600 font-semibold">6</td>
+                            <td class="px-6 py-4 font-mono text-gray-800">2177745</td>
+                            <td class="px-6 py-4 text-gray-800 font-medium">Juan Roberto Sánchez Vázquez</td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold">IME</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Info -->
+    <section class="section-padding bg-white py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8">
+                <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">Sobre el Proyecto</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shrink-0">
+                            <i class="bi bi-book text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg">Tema Principal</h3>
+                            <p class="text-gray-600">Principios Básicos de la Naturaleza</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center shrink-0">
+                            <i class="bi bi-globe-americas text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg">Capítulo 1: El Planeta Tierra como Ecosistema</h3>
+                            <p class="text-gray-600">Componentes bióticos y abióticos, las cuatro esferas, condiciones para la vida e impacto humano.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shrink-0">
+                            <i class="bi bi-lightning-charge text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg">Capítulo 2: Flujo de Energía y Ciclos Biogeoquímicos</h3>
+                            <p class="text-gray-600">Niveles tróficos, pirámide de energía, ciclos del carbono, nitrógeno, agua y más.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center shrink-0">
+                            <i class="bi bi-emoji-laughing text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg">Capítulo 3: Rol de los Seres Vivos en los Ecosistemas</h3>
+                            <p class="text-gray-600">Productores, consumidores, descomponedores, interacciones ecológicas y equilibrio ecológico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Principios Básicos de la Naturaleza</h3>
+                    <p class="text-green-200">
+                        Un proyecto educativo sobre los fundamentos que rigen nuestro planeta.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-green-200 hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="blog.html" class="text-green-200 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="foro.html" class="text-green-200 hover:text-white transition-colors">Foro</a></li>
+                        <li><a href="equipo.html" class="text-green-200 hover:text-white transition-colors">Equipo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Universidad</h4>
+                    <p class="text-green-200">
+                        Universidad Autónoma de Nuevo León<br>
+                        Facultad de Ingeniería Mecánica y Eléctrica
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-green-800 mt-8 pt-8 text-center text-green-200">
+                <p>© 2026 Equipo 3 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>
