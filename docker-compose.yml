@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: naturaleza
+    ports:
+      - "8007:80"
+    restart: always
