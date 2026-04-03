@@ -1,5 +1,9 @@
 # Principios Básicos de la Naturaleza
 
+<p align="center">
+    <img src="https://uziel.app/media/projects/blog-naturaleza/1.webp" alt="hero"  />
+</p>
+
 ## Descripción del Proyecto
 
 Este proyecto es un sitio web educativo estático sobre los principios fundamentales que rigen la naturaleza y los ecosistemas de nuestro planeta. El objetivo es concientizar a los usuarios sobre la importancia de cuidar el medio ambiente y promover prácticas sostenibles.
