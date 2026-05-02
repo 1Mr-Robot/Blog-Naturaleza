@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    container_name: naturaleza
+    container_name: blog-naturaleza
+    restart: always
     ports:
       - "8007:80"
-    restart: always
